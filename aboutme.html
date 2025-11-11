@@ -16,7 +16,18 @@
           <span class="dot"></span>
           <span class="dot1"></span>
           <span class="dot2"></span>
-          <span class="square"></span>
+          <div class="square">
+            <button onclick="myFunction()" class="dropbtn">
+            <sub>click to explore</sub>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="aboutme.html">About me</a>
+              <a href="#">Competitions</a>
+              <a href="#">CFU'S</a>
+              <a href="index.html">Home</a>
+
+            </div>
+          </div>
         </div>
 
         <div class="box-container">
@@ -25,11 +36,34 @@
             </div>
           <div class="content">
             <div class="box" id="resume">
-              <iframe src="Resume_official.pdf" width="635" height="515" "></iframe>
+             <iframe src="Resume_official.pdf" width="635" height="515" "></iframe>
+
             </div>
             
           </div>
+          <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+          </script>
         
           </body>
 
           </html>
+
