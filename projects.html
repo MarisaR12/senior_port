@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marisa.com</title>
+<link href="projects.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+      <body>
+        <div class="topbar">
+          <span class="dot"></span>
+          <span class="dot1"></span>
+          <span class="dot2"></span>
+          <div class="square">
+            <button onclick="myFunction()" class="dropbtn">
+            <sub style="margin-bottom: 2%;">Click to explore</sub>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="aboutme.html">About me</a>
+              <a href="index.html">Home</a>
+              <a href="#">Competitions</a>
+              <a href="#">CFU'S</a>
+              <a href="https://marisar12.github.io/Sophomore_Portfolio/" target="_blank">Sophomore Portfolio</a>
+              <a href="https://marisar12.github.io/junioryearport/" target="_blank">Junior Portfolio</a>
+</div>
+          </div>
+        </div>
+
+        
+<div class="project-container">
+        <div class="project-icons">
+          <img src="novalogo.png">
+          <div class="overlay">
+            <h4 style="font-family: Kameron, serif;"><a href="https://marisar12.github.io/congressional_app_website/" target="_blank">The congressional App Challenge</a></h4>
+            <p style="font-family: Zain, sans-serif;font-size: 1.8vh;">For this project me and my group created an app based on the topic education. Nova is an app for high school students that are struggling in school. Nova offers straight forwards notes, practice problems, videos, and games so that everyone can learn when using Nova no matter there learning style. Click the title above to go to Novas Website</p>
+          </div>
+        </div>
+    <div class="project-icons">
+      <img src="logo (1).png">
+      <div class="overlay">
+        <h4 style="font-family: Kameron, serif;"><a href="https://marisar12.github.io/Lovedpetswebsite/" target="_blank">Loved Pets</a></h4>
+        <p style="font-family: Zain, sans-serif;font-size: 1.8vh;">Loved Pets was a fake animal shelter that we had to create a website for as our client. Through this project I was able to work on my html and css skills by creating the website from scratch. Click the title above to go to Loved Pets Website</p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+      
+        
+          <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+          </script>
+        
+          </body>
+
+          </html>
