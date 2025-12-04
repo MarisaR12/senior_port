@@ -100,3 +100,10 @@ a:hover{
   color: #b0b0b0;
   text-decoration: underline;
 }
+
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 20px;
+}
